@@ -1,14 +1,23 @@
+CLAGS = -Wall -Wextra -Werror -I includes/
+
 NAME = ft_display_file
-SRC = ./srcs/ft_error.c ./srcs/main.c\
 
-all: &(NAME)
+SRC_C = ft_error.c \
+	   	main.c\
 
-&(NAME):
-	gcc -Wall -Wextra -Werror $(SRC) -o $(NAME)
+SRC = $(addprefix srcs/, $(SRC_C))
+
+SRC_O = $(SRC:.c=.o)
+
+all: $(NAME)
+
+$(NAME): $(SRC_O)
+	gcc $(CFLAGS) $? -o $(NAME)
 
 clean:
-	rm $(NAME)
+	rm -rf $(SRC_O)
 
 fclean: clean
+	rm -rf $(NAME)
 
 re: fclean all

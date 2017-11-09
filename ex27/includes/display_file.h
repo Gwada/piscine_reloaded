@@ -1,5 +1,17 @@
-#ifndef FT_DISPLAY_FILE
-# define FT_DISPLAY_FILE
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   display_file.h                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/11/06 13:18:44 by dlavaury          #+#    #+#             */
+/*   Updated: 2017/11/06 13:19:42 by dlavaury         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef FT_DISPLAY_FILE_H
+# define FT_DISPLAY_FILE_H
 
 # include <unistd.h>
 # include <sys/types.h>
